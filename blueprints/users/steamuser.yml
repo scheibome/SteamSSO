@@ -1,0 +1,5 @@
+title: Steamuser
+
+permissions:
+  access:
+    panel: false
