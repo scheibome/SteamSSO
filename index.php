@@ -1,10 +1,6 @@
 <?php
 
-// Include the necessary classes for Steam SSO
-require_once __DIR__ . '/src/SteamAuth.php';
-require_once __DIR__ . '/src/SteamApi.php';
-require_once __DIR__ . '/src/UserManager.php';
-require_once __DIR__ . '/src/Helpers.php';
+require __DIR__ . '/vendor/autoload.php';
 
 // Import the necessary classes for Steam SSO
 use Scheibo\SteamSSO\SteamAuth;

@@ -1,14 +1,38 @@
 {
-  "name": "scheibo/steamsso",
-  "version": "1.0.0",
-  "description": "A Steam SSO plugin for seamless integration with Steam accounts, enabling users to log in with their Steam credentials. Simplifies authentication for gaming platforms and services.",
-  "authors": [
-    {
-      "name": "Thomas Scheibitz",
-      "email": "hello@scheibitz.com"
+    "name": "scheibo/steamsso",
+    "description": "A Steam SSO plugin for seamless integration with Steam accounts, enabling users to log in with their Steam credentials. Simplifies authentication for gaming platforms and services.",
+    "type": "kirby-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "kirby",
+        "steam",
+        "login"
+    ],
+    "homepage": "https://github.com/scheibome/SteamSSO#readme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Scheibitz",
+            "email": "hello@scheibitz.com",
+            "homepage": "https://www.scheibitz.com"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.2",
+        "league/oauth2-client": "^2.7"
+    },
+    "require-dev": {
+        "getkirby/cms": "^4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Scheibo\\SteamSSO\\": "src/"
+        }
     }
-  ],
-  "require": {
-    "league/oauth2-client": "^2.7"
-  }
 }
