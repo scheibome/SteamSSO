@@ -1,0 +1,39 @@
+:root {
+  --steamsso-button-main-color: #6F9F31;
+  --steamsso-button-contrast-color: #FFFFFF;
+  --steamsso-button-main-color-hover: #5F8F21;
+  --steamsso-button-contrast-color-hover: #FFFFFF;
+  --steamsso-button-padding: 0.8em 1.2em;
+  --steamsso-button-radius: 5px;
+  --steamsso-button-font-family: sans-serif;
+}
+
+.steamsso-button {
+  display: inline-flex;
+  align-self: center;
+  padding: var(--steamsso-button-padding);
+  color: var(--steamsso-button-contrast-color);
+  background-color: var(--steamsso-button-main-color);
+  cursor: pointer;
+  border-radius: var(--steamsso-button-radius);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--steamsso-button-font-family);
+}
+
+.steamsso-button:hover {
+  color: var(--steamsso-button-contrast-color-hover);
+  background-color: var(--steamsso-button-main-color-hover);
+}
+
+.steamsso-userinfo {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.steamsso-userinfo__avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  line-height: 0;
+}

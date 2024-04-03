@@ -1,4 +1,4 @@
-# SteamSSO Plugin
+# SteamSSO Plugin for Kirby 4
 
 This plugin allows you to authenticate users via Steam OpenID.
 
@@ -6,11 +6,11 @@ This plugin allows you to authenticate users via Steam OpenID.
 
 ### Download
 
-Download and copy this repository to `/site/plugins/steam-sso`.
+Download and copy this repository to `/site/plugins/steamsso`.
 
 ### Composer
 
-```composer require scheibo/steam-sso```
+```composer require scheibo/steamsso```
 
 ## Configuration
 
@@ -32,3 +32,36 @@ return [
     ],
 ];
 ```
+
+### Add Steam Login Button
+
+Add the following code to your template:
+
+```php
+<?php snippet('steamsso/loginbutton') ?>
+```
+
+### Add Steam Logout Button
+
+Add the following code to your template:
+
+```php
+<?php snippet('steamsso/logoutbutton') ?>
+```
+
+### Add Steam User Info
+
+Add the following code to your template:
+
+```php
+<?php snippet('steamsso/userinfo') ?>
+```
+
+### Add stylesheet
+
+Add the following code to your template:
+
+```php
+<?= css('site/plugins/steamsso/steamsso.css') ?>
+```
+
