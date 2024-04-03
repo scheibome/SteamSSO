@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . '/vendor/autoload.php';
-
 // Import the necessary classes for Steam SSO
 use Scheibo\SteamSSO\SteamAuth;
 use Scheibo\SteamSSO\SteamApi;
