@@ -2,7 +2,7 @@
     "name": "scheibo/steamsso",
     "description": "A Steam SSO plugin for seamless integration with Steam accounts in Kirby, enabling users to log in with their Steam credentials. Simplifies authentication for gaming platforms and services.",
     "type": "kirby-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "kirby",
         "steam",
